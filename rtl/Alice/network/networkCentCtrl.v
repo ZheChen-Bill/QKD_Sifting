@@ -527,7 +527,7 @@ module networkCentCtrl #(
         end
     end
 
-    FrameGenerator_B UframeGen
+    FrameGenerator UframeGen
     (
         .clk_PP(clk_PP),
         .clk_GMII(gmii_tx_clk),
@@ -582,7 +582,7 @@ module networkCentCtrl #(
         .ack_received_cdc_after(ack_received_cdc_after_FrameGenerator)
     );
     //    assign received_valid = 1'b0;
-    FrameSniffer_B UframeSniffer(
+    FrameSniffer UframeSniffer(
         .clk_PP(clk_PP),
         .clk_GMII(gmii_rx_clk),
         .reset(reset),

@@ -1,4 +1,4 @@
-module FrameSniffer_B(
+module FrameSniffer(
     input clk_PP,
     input clk_GMII,
     input reset,
