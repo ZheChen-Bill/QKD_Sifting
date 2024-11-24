@@ -67,7 +67,7 @@ module B_unpacket (
     output wire B_RX_bram_enb,
     output wire B_RX_bram_web,
     output reg [10:0] B_RX_bram_addrb,
-    output wire [31:0] B_RX_bram_doutb
+    input wire [31:0] B_RX_bram_doutb
     
 //    // TX Signal
 //    output reg busy_PP2Net_TX,             // BRAMMsgTX is used by PP
